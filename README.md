@@ -14,12 +14,6 @@ You can also install via URL:
 
      brew install https://raw.github.com/anarchivist/homebrew-forensics/master/<directory>/<formula>.rb
 
-Categories
-----------
-
-* *binary-only*: formulae that provide only Mac OS X binaries.
-* *head-only*: formulae that provide only the latest development HEAD.
-
 Docs
 ----
 

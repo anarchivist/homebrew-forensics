@@ -1,6 +1,7 @@
 require 'formula'
 
 class Ftkimager < Formula
+  # binary only
   homepage 'http://accessdata.com/support/adownloads'
   url 'http://accessdata.com/downloads/current_releases/imager/FTK%20ImagerCLI%202.9.0_Mac.zip'
   version '2.9.0'

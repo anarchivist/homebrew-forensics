@@ -1,6 +1,7 @@
 require 'formula'
 
 class Fsrip < Formula
+  # head only
   head 'https://github.com/jonstewart/fsrip.git'
   homepage 'http://github.com/jonstewart/fsrip'
 
