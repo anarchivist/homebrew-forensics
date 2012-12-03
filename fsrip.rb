@@ -14,8 +14,8 @@ class Fsrip < Formula
       s.gsub! 'env.Replace(CCFLAGS=ccflags)', "env.MergeFlags(['#{ENV.cflags}', ccflags])"
     end
 
-    system 'scons', 'boostType="-mt"'
-    prefix.install %w{ LICENSE.txt HttpProtocol.txt README.txt hasher.py}
+    system 'scons', 'boostType="-mt"', "CC=#{ENV.cc}", "CXX=#{ENV.cxx}"
+    prefix.install %w{ LICENSE.txt HttpProtocol.txt README.md extract.py hasher.py}
     bin.install 'build/src/fsrip' => 'fsrip'
   end
 
