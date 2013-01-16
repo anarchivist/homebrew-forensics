@@ -3,15 +3,15 @@ require 'formula'
 class Ftkimager < Formula
   # binary only
   homepage 'http://accessdata.com/support/adownloads'
-  url 'http://accessdata.com/downloads/current_releases/imager/FTK%20ImagerCLI%202.9.0_Mac.zip'
-  version '2.9.0'
-  sha1 '35185efb34579bc34fd3e777c29c934dfbdae22c'
+  url 'https://ad-zip.s3.amazonaws.com/ftkimager%203.1.1_Mac.u.zip'
+  version '3.1.1'
+  sha1 '3e4c6911dec66d050a14939a3e0469434c9d56ee'
 
   def install
     bin.install 'ftkimager'
   end
 
   def test
-    system "false"
+    system "ftkimager"
   end
 end
